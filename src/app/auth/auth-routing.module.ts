@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { MaterialModule } from '../material/material.module';
+
+
 
 const routes: Routes = [
   {
@@ -17,7 +20,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [
+    RouterModule.forChild(routes),
+    MaterialModule
+  ],
   exports: [RouterModule]
 })
 export class AuthRoutingModule { }

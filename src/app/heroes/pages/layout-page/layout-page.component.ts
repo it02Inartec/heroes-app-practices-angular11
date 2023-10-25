@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-layout-page',
@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class LayoutPageComponent implements OnInit {
+export class LayoutPageComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  public sidebarItems = [
+    { label: 'List', icon: 'label', url: './list'},
+    { label: 'Add', icon: 'add', url: './new-hero'},
+    { label: 'Search', icon: 'search', url: './search'},
+  ];
 }
