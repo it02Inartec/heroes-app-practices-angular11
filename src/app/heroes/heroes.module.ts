@@ -8,10 +8,19 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { NewHeroPageComponent } from './pages/new-hero-page/new-hero-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MaterialModule } from '../material/material.module';
+import { HeroesHeroCardComponent } from './components/heroes-hero-card/heroes-hero-card.component';
+import { HeroImagePipe } from './pipes/hero-image.pipe';
 
 
 @NgModule({
-  declarations: [HeroPageComponent, LayoutPageComponent, ListPageComponent, NewHeroPageComponent, SearchPageComponent],
+  declarations: [
+    HeroPageComponent, 
+    LayoutPageComponent, 
+    ListPageComponent, 
+    NewHeroPageComponent, 
+    SearchPageComponent, 
+    HeroesHeroCardComponent, 
+    HeroImagePipe],
   imports: [
     CommonModule,
     HeroesRoutingModule,
